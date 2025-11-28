@@ -1,3 +1,4 @@
+
 # Grocery App (Flask + SQLite)
 This project showcases a grocery inventory management page using the *Grocery Inventory dataset*. The workflow includes data preprocessing, database creation, and developing a web application for data visualization. It allows users to:
 
@@ -42,12 +43,12 @@ path **/grocery_table**: Opens the 'grocery_table.html' page with data that has 
 
 ## HTML Pages 
 
-**'grocery.html'** 
+**'Grocery search.html'** 
 1. Header: The page displays a clear title, "Grocery List".
 2. Search Function: A search bar and button allow users to quickly look up specific grocery items.
 3. Navigation: A “Back to Home” button lets users return to the main page easily. 
 
-**'grocery_table.html'**  
+**'Grocery data.html'**  
 1. Header: The page includes a main title, "Grocery Table", which introduces the full dataset.
 2. Navigation: A “Back to Home” button helps users move back to the homepage.
 3. Data Table: The page features a full table view. Each row shows one record, and each column displays a specific attribute from the dataset.
@@ -63,10 +64,10 @@ path **/grocery_table**: Opens the 'grocery_table.html' page with data that has 
 
 ### 2. Start the Web Application
 - Open a terminal or command prompt.
-- Move to the directory where is local the project
+- Move to the directory where app.py is located.
 - Run the application with:
   ```python
-  python app.py
+  python website/app.py
   ```
 
 ### 3. Open in Your Browser

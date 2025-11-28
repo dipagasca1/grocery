@@ -10,7 +10,7 @@ def get_db_connection():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('about.html')
 
 @app.route('/grocery')
 def show_grocery():
@@ -19,12 +19,12 @@ def show_grocery():
     conn.close()
     return render_template('search_grocery.html', grocery=grocery)
 
-@app.route('/grocery_table')
+@app.route('/data')
 def show_grocery_table():
     conn = get_db_connection()
     grocery = conn.execute('SELECT * FROM grocery').fetchall()
     conn.close()
-    return render_template('grocery_table.html', grocery=grocery)
+    return render_template('data.html', grocery=grocery)
 
 #Create new route for search
 @app.route('/search')

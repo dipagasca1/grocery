@@ -9,7 +9,7 @@ This project showcases a grocery inventory management page using the *Grocery In
 
 ## Dataset Information 
 
-![Grocery Store Logo](https://seeklogo.com/images/G/grocery-store-logo-384031.png)
+![Grocery Store Logo](https://www.pngwing.com/en/free-png-vqusg)
 
 The dataset used for this project can be found on Kaggle: [Grocery Inventory]( https://www.kaggle.com/datasets/willianoliveiragibin/grocery-inventory?utm_source). 
 

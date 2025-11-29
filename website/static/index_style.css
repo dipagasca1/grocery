@@ -39,6 +39,41 @@ button {
     transition: all 0.3s ease;  /* smooth hover effect */
     box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* shadow effect */
 }
+.info_data {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.info_data p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info_data ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info_data li {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border-left: 4px solid #012002;
+}
+
+
+
+
+
 
 
 

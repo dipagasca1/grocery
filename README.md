@@ -12,7 +12,7 @@ The application allows users to:
 
 ## Dataset Information
 
-![Grocery Logo](https://raw.githubusercontent.com/dipagasca1/grocery/main/grocery-store-logo-png_seeklogo-384031.png)
+![Grocery Logo](website/static/logogrocery.png)
 
 Dataset Source (Kaggle):  
 **[Grocery Inventory Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/grocery-inventory?utm_source)**

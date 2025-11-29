@@ -90,7 +90,7 @@ http://127.0.0.1:5000/ or http://localhost:5000/
 
 | Name                 | Role                      | Responsibilities                                                |
 |----------------------|---------------------------|-----------------------------------------------------------------|
-| **Diana Paola Gasca Duran**| Frontend Developer| Designed HTML templates, UI layout, search interface|
-| **DongJu Ko** | Data Preprocessing & Documentation | Prepared and load data and README, structured project documentation |
+| **Diana Paola Gasca Duran**| Frontend Developer| Designed HTML templates, UI layout, search interface, Flask|
+| **DongJu Ko** | Data Preprocessing & Documentation | Prepared and load data and README, structured project documentation, Flask |
 
 Now enjoy exploring our ‘Grocery App’ web application. If you have any questions or problems, we’re here to help.🙂  

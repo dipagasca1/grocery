@@ -76,7 +76,6 @@ Dataset Source (Kaggle):
 
 ### 2. Start the Web Application
 - Open a terminal or command prompt.
-- Move to the directory where app.py is located.
 - Run the application with:
   ```python
   python website/app.py

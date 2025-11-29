@@ -33,8 +33,8 @@ Dataset Source (Kaggle):
 
 ### Step 2: Database Creation
 
-- The cleaned dataset is processed by `dataload.py` and
-  loads the data into an SQLite database stored as `grocery.db`.
+ The cleaned dataset is processed by `dataload.py` and
+ loads the data into an SQLite database stored as `grocery.db`.
 
 
 ### Step 3: Developing the Web Application
@@ -44,10 +44,8 @@ Dataset Source (Kaggle):
 
  Note: `about.html` is the default landing page.
 
-- **`/grocery`** - Opens the `search_grocery.html`, which provides a search function and a link to the data table.  
-- **`/data`** - Opnes the `data.html`, displaying grocery records retrieved from the SQLite database.
-
-
+- **`/grocery`** - Opens the `search_grocery.html`, which provides a search button with product name.  
+- **`/data`** - Opens the 'data.html' page with data that has been retrieved from the SQLite database.('grocery.db')
 
 ## HTML Pages Overview
 
@@ -59,8 +57,8 @@ Dataset Source (Kaggle):
 
 ### `search_grocery.html`
 1. Displays the header **"Grocery List"**.  
-2. Includes a search bar and search button.  
-3. Provides a “Back to Home” navigation button.  
+2. Includes a search bar and button allow users to quickly look up specific grocery items.
+4. Provides a “Back to Home” navigation button.  
 
 ### `data.html`
 1. Displays the header **"Grocery Table"**.  

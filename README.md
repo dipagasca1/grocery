@@ -1,57 +1,71 @@
-
 # Grocery App (Flask + SQLite)
-This project showcases a grocery inventory management page using the *Grocery Inventory dataset*. The workflow includes data preprocessing, database creation, and developing a web application for data visualization. It allows users to:
 
--	Search grocery items by name.
--	View item details such as category, supplier, stock quantity, and price.
--	Access clean and structured data through an integrated SQLite database.
+This project presents a grocery inventory management application built using the **Grocery Inventory dataset**.  
+The workflow includes data preprocessing, database creation, and the development of a Flask-based web application for visualizing and searching grocery items.
 
-
-## Dataset Information 
-
-![Grocery Store Logo](https://www.pngwing.com/en/free-png-vqusg)
-
-The dataset used for this project can be found on Kaggle: [Grocery Inventory]( https://www.kaggle.com/datasets/willianoliveiragibin/grocery-inventory?utm_source). 
+The application allows users to:
+- Search grocery items by name.  
+- View details such as category, supplier, stock quantity, and price.  
+- Access clean and structured data stored in an integrated SQLite database.
 
 
-**Step 1: Data Preprocessing**
 
-1. Cabin Column Removed:  
+## Dataset Information
 
- Reason: In original dataset category was mistyped as ‘Category’.  
- Action: Revised as ‘Category’ from dataset.
+![Grocery Logo](https://raw.githubusercontent.com/dipagasca1/grocery/main/grocery-store-logo-png_seeklogo-384031.png)
 
-2. Null values dropped:  
+Dataset Source (Kaggle):  
+**[Grocery Inventory Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/grocery-inventory?utm_source)**
 
- Action: The dataset's remaining null values were eliminated. 
 
-3. Made an updated CSV:  
+### Step 1: Data Preprocessing
 
- Name of the file: "grocery_inventory.csv" 
+ **Corrected a Mistyped Column Name**  
+ - Issue: The original dataset included a column labeled **‘Category’** with incorrect spelling.  
+ - Action: Corrected the spelling to **‘Category’**.
 
-**Step 2: Database Creation** 
+ **Removed Null Values**  
+ - Action: All rows containing null values were removed to ensure data consistency.
 
-The cleaned data is read from 'grocery.csv' by the 'dataload.py' script, which then loads it into an SQLite database.  
+ **Saved the Updated Dataset**  
+ - Output file created: `grocery_inventory.csv`
 
- 
-**Step 3: Developing Web Application** 
 
-The Flask framework is used by the 'app.py' script to build a web application with two routes: 
+### Step 2: Database Creation
 
-path **/grocery**: The 'grocery.html' page is rendered by this. Features a button to jump to the dataset. 
-path **/grocery_table**: Opens the 'grocery_table.html' page with data that has been retrieved from the SQLite database ('grocery.db'). 
+- The cleaned dataset is processed by `dataload.py` and
+  loads the data into an SQLite database stored as `grocery.db`.
 
-## HTML Pages 
 
-**'Grocery search.html'** 
-1. Header: The page displays a clear title, "Grocery List".
-2. Search Function: A search bar and button allow users to quickly look up specific grocery items.
-3. Navigation: A “Back to Home” button lets users return to the main page easily. 
+### Step 3: Developing the Web Application
 
-**'Grocery data.html'**  
-1. Header: The page includes a main title, "Grocery Table", which introduces the full dataset.
-2. Navigation: A “Back to Home” button helps users move back to the homepage.
-3. Data Table: The page features a full table view. Each row shows one record, and each column displays a specific attribute from the dataset.
+ The Flask framework is used in `app.py` to build the web application.  
+ The app includes the following routes:
+
+ Note: `about.html` is the default landing page.
+
+- **`/grocery`** - Opens the `search_grocery.html`, which provides a search function and a link to the data table.  
+- **`/data`** - Opnes the `data.html`, displaying grocery records retrieved from the SQLite database.
+
+
+
+## HTML Pages Overview
+
+### `about.html`
+1. Header: **"Welcome to the Grocery App"**.  
+2. Navigation buttons to **Grocery Search** and **Grocery Table**.  
+3. Clickable URL link to the Kaggle dataset.
+4. A description table explaining each data type and description of dataset.  
+
+### `search_grocery.html`
+1. Displays the header **"Grocery List"**.  
+2. Includes a search bar and search button.  
+3. Provides a “Back to Home” navigation button.  
+
+### `data.html`
+1. Displays the header **"Grocery Table"**.  
+2. Provides a “Back to Home” navigation button.  
+3. Contains a full table of grocery records with all data.
 
 ## How to Run the Project
 
